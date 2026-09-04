@@ -1,0 +1,42 @@
+.heading {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.center {
+  align-items: center;
+  text-align: center;
+}
+
+.left {
+  align-items: flex-start;
+  text-align: left;
+}
+
+.eyebrow {
+  font-family: var(--font-body);
+  font-size: var(--text-sm);
+  font-weight: var(--weight-semibold);
+  text-transform: uppercase;
+  letter-spacing: 0;
+}
+
+.brandRed {
+  color: var(--color-brand-red);
+}
+
+.title {
+  font-family: var(--font-display);
+  font-size: var(--text-4xl);
+  font-weight: var(--weight-bold);
+  color: var(--color-ink);
+  margin: 0;
+}
+
+.accentBar {
+  width: 48px;
+  height: 3px;
+  background-color: var(--color-brand-red);
+  border: none;
+}

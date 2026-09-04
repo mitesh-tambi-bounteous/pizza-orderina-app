@@ -1,0 +1,9 @@
+.image {
+  width: 100%;
+  max-width: 616px;
+  height: auto;
+  aspect-ratio: 616 / 480;
+  object-fit: cover;
+  border-radius: var(--radius-2xl);
+  display: block;
+}

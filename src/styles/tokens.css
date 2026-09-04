@@ -1,0 +1,31 @@
+:root {
+  --color-ink: #151212;
+  --color-brand-red: #c82d25;
+  --color-on-dark: #ffffff;
+  --overlay-on-dark: rgba(255, 255, 255, 0.1);
+
+  --font-display: "Fraunces", serif;
+  --font-body: "Geist", sans-serif;
+  --weight-medium: 500;
+  --weight-semibold: 600;
+  --weight-bold: 700;
+  --text-sm: 13px;
+  --text-lg: 16px;
+  --text-xl: 18px;
+  --text-4xl: 40px;
+  --text-5xl: 64px;
+
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-10: 40px;
+  --space-16: 64px;
+
+  --radius-sm: 8px;
+  --radius-2xl: 24px;
+  --radius-full: 100px;
+
+  --stroke-thin: 1px;
+}
