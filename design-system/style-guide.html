@@ -1,0 +1,248 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Pizza App Design System — Style Guide</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="tokens.css" />
+  <link rel="stylesheet" href="prototype-utils.css" />
+  <style>
+    body {
+      font-family: var(--font-family-base);
+      background: var(--color-bg);
+      color: var(--color-fg);
+      margin: 0;
+      padding: var(--space-4);
+    }
+    h1, h2, h3 {
+      font-family: var(--font-family-display);
+    }
+    section {
+      max-width: 960px;
+      margin: 0 auto var(--space-4) auto;
+    }
+    .swatch-grid, .sample-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+      gap: var(--space-3);
+    }
+    .swatch {
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-md);
+      overflow: hidden;
+    }
+    .swatch-color {
+      height: 64px;
+    }
+    .swatch-label {
+      padding: var(--space-2);
+      font-size: var(--font-size-sm);
+      background: var(--color-surface);
+    }
+    .dim-bar {
+      background: var(--color-primary);
+      border-radius: var(--radius-sm);
+    }
+    .dim-row {
+      display: flex;
+      align-items: center;
+      gap: var(--space-3);
+      margin-bottom: var(--space-2);
+    }
+    .component-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: var(--space-3);
+      align-items: center;
+      margin-bottom: var(--space-3);
+    }
+    code {
+      font-size: var(--font-size-sm);
+      background: var(--color-surface);
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-sm);
+      padding: 0 4px;
+    }
+    .guidelines {
+      background: var(--color-surface);
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-lg);
+      padding: var(--space-4);
+    }
+    .guidelines ul {
+      padding-left: 1.2em;
+    }
+  </style>
+</head>
+<body>
+
+  <section>
+    <h1>Pizza App Design System</h1>
+    <p>High quality &amp; trustworthy pizza ordering experience. Tokens, components, and product UI rules below.</p>
+  </section>
+
+  <section>
+    <h2>Color tokens</h2>
+    <div class="swatch-grid">
+      <div class="swatch">
+        <div class="swatch-color" style="background: var(--color-fg)"></div>
+        <div class="swatch-label"><code>color-fg</code></div>
+      </div>
+      <div class="swatch">
+        <div class="swatch-color" style="background: var(--color-fg-muted)"></div>
+        <div class="swatch-label"><code>color-fg-muted</code></div>
+      </div>
+      <div class="swatch">
+        <div class="swatch-color" style="background: var(--color-bg); border-bottom: 1px solid var(--color-border)"></div>
+        <div class="swatch-label"><code>color-bg</code></div>
+      </div>
+      <div class="swatch">
+        <div class="swatch-color" style="background: var(--color-surface); border-bottom: 1px solid var(--color-border)"></div>
+        <div class="swatch-label"><code>color-surface</code></div>
+      </div>
+      <div class="swatch">
+        <div class="swatch-color" style="background: var(--color-primary)"></div>
+        <div class="swatch-label"><code>color-primary</code></div>
+      </div>
+      <div class="swatch">
+        <div class="swatch-color" style="background: var(--color-primary-hover)"></div>
+        <div class="swatch-label"><code>color-primary-hover</code></div>
+      </div>
+      <div class="swatch">
+        <div class="swatch-color" style="background: var(--color-accent)"></div>
+        <div class="swatch-label"><code>color-accent</code></div>
+      </div>
+      <div class="swatch">
+        <div class="swatch-color" style="background: var(--color-border)"></div>
+        <div class="swatch-label"><code>color-border</code></div>
+      </div>
+      <div class="swatch">
+        <div class="swatch-color" style="background: var(--color-danger)"></div>
+        <div class="swatch-label"><code>color-danger</code></div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Spacing tokens</h2>
+    <div class="dim-row"><code>space-1</code><div class="dim-bar" style="width: var(--space-1); height: 16px;"></div></div>
+    <div class="dim-row"><code>space-2</code><div class="dim-bar" style="width: var(--space-2); height: 16px;"></div></div>
+    <div class="dim-row"><code>space-3</code><div class="dim-bar" style="width: var(--space-3); height: 16px;"></div></div>
+    <div class="dim-row"><code>space-4</code><div class="dim-bar" style="width: var(--space-4); height: 16px;"></div></div>
+  </section>
+
+  <section>
+    <h2>Radius tokens</h2>
+    <div class="component-row">
+      <div style="width: 64px; height: 64px; background: var(--color-primary); border-radius: var(--radius-sm);"></div>
+      <code>radius-sm</code>
+      <div style="width: 64px; height: 64px; background: var(--color-primary); border-radius: var(--radius-md);"></div>
+      <code>radius-md</code>
+      <div style="width: 64px; height: 64px; background: var(--color-primary); border-radius: var(--radius-lg);"></div>
+      <code>radius-lg</code>
+    </div>
+  </section>
+
+  <section>
+    <h2>Typography tokens</h2>
+    <p style="font-size: var(--font-size-sm)">font-size-sm — Delivered in 25–30 minutes.</p>
+    <p style="font-size: var(--font-size-md)">font-size-md — Margherita, Pepperoni, Quattro Formaggi.</p>
+    <p style="font-size: var(--font-size-lg); font-family: var(--font-family-display); font-weight: var(--font-weight-bold);">font-size-lg — Tonight's Special</p>
+  </section>
+
+  <section>
+    <h2>Buttons</h2>
+    <div class="component-row">
+      <button class="btn btn-primary">Add to Order</button>
+      <button class="btn btn-secondary">Customize</button>
+    </div>
+  </section>
+
+  <section>
+    <h2>Cards</h2>
+    <div class="sample-grid">
+      <div class="card">
+        <h3 class="card-title">Margherita</h3>
+        <p class="card-subtitle">San Marzano tomato, fresh mozzarella, basil</p>
+        <span class="chip chip-accent">Vegetarian</span>
+        <div class="card-footer">
+          <strong>$14.00</strong>
+          <button class="btn btn-primary">Add to Order</button>
+        </div>
+      </div>
+      <div class="card">
+        <h3 class="card-title">Order #1042</h3>
+        <p class="card-subtitle">Placed 6:42 PM</p>
+        <span class="chip">In the oven</span>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Chips</h2>
+    <div class="component-row">
+      <span class="chip">Gluten-free crust</span>
+      <span class="chip chip-accent">Vegetarian</span>
+    </div>
+  </section>
+
+  <section>
+    <h2>Form controls</h2>
+    <label class="field-label" for="addr">Delivery address</label>
+    <input class="input" id="addr" type="text" placeholder="123 Oak Street" />
+    <br /><br />
+    <label class="field-label" for="phone">Phone number</label>
+    <input class="input input-error" id="phone" type="text" value="555-01" />
+    <p class="error-text">Enter a valid 10-digit phone number.</p>
+  </section>
+
+  <section class="guidelines">
+    <h2>UI Guidelines</h2>
+
+    <h3>Navigation</h3>
+    <p>Top bar only (logo, Menu, Order Status, Cart), no sidebar — the product is a short,
+      linear ordering flow (browse → customize → cart → checkout) and a persistent sidebar
+      would imply more depth than a small pizzeria's menu has. Main sections: Menu,
+      Cart/Checkout, Order Status, Account.</p>
+
+    <h3>Layout and density</h3>
+    <p>Spacious, consumer-facing density (not a dense console) — customers are choosing food,
+      not scanning data, so generous spacing (space-3/space-4) builds the same unhurried,
+      quality feel as a good restaurant. Single-column on mobile, a two-column menu grid from
+      tablet width up, and a fixed-width cart summary panel on desktop; the only breakpoint
+      that matters is where the cart moves from a bottom sheet (narrow screens) to a
+      persistent side panel (wide screens).</p>
+
+    <h3>Component usage</h3>
+    <ul>
+      <li>Use <code>.card</code> for anything the customer chooses or reviews as a discrete
+        item: menu items, the cart summary, an order-status entry — cards read as "one thing
+        you can act on."</li>
+      <li>Use <code>.chip</code> for compact, glanceable metadata attached to a card: spice
+        level, dietary tags, order status — chips keep secondary info out of the card's
+        primary text.</li>
+      <li>Use a plain list (not a table) for the cart's line items — a table implies
+        column-wise comparison, which customers aren't doing with 2-5 pizzas.</li>
+      <li>Reserve tables for the owner-facing order history/admin view only, where scanning
+        many rows by column (date, total, status) is the actual task.</li>
+      <li>Use <code>.btn-primary</code> for exactly one action per screen (Add to Order, Place
+        Order) so the customer always knows the one next step; <code>.btn-secondary</code> for
+        everything else (Customize, Cancel, Back).</li>
+      <li>Use <code>.input</code>/<code>.field-label</code> for all checkout and account
+        forms; pair with <code>.input-error</code>/<code>.error-text</code> for validation so
+        errors read as part of the form, not a separate alert.</li>
+    </ul>
+
+    <h3>Theme</h3>
+    <p>Light theme only, no dark mode — food photography and pizza imagery read truest
+      against the warm, light color-bg, and a small business site doesn't need to maintain two
+      visual identities.</p>
+
+    <h3>Voice and tone</h3>
+    <p>Warm and plainspoken, like a family-owned pizzeria's counter staff — short sentences,
+      no slang or forced humor, and always name the actual food ("Your Margherita is in the
+      oven") rather than generic status jargon ("Processing").</p>
+  </section>
+
+</body>
+</html>
