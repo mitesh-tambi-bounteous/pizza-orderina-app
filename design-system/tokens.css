@@ -1,0 +1,43 @@
+/**
+ * Do not edit directly, this file was auto-generated.
+ */
+
+:root {
+  --color-fg: #1b1916; /** Primary body text color on light backgrounds. Near-black for trustworthy, high-contrast reading. */
+  --color-fg-muted: #605a53; /** Secondary text: captions, helper text, timestamps. */
+  --color-bg: #fcf8f2; /** Default page background. Warm off-white, like a pizzeria tablecloth, not clinical white. */
+  --color-surface: #ffffff; /** Elevated surface background for cards and panels sitting on color-bg. */
+  --color-primary: #b12720; /** Brand action color: baked-crust red, used for primary CTAs like Add to Order / Checkout. */
+  --color-primary-hover: #8e1916; /** Hover/pressed state for primary actions, slightly deeper red. */
+  --color-primary-fg: #ffffff; /** Text/icon color on top of color-primary fills. */
+  --color-accent: #355f2d; /** Secondary brand accent: basil green, used sparingly for success/fresh-ingredient cues. */
+  --color-border: #d9cfc2; /** Default border color for cards, inputs and dividers. */
+  --color-danger: #b31c1b; /** Error/destructive state color, e.g. failed payment, remove item. */
+  --space-1: 4px; /** Tightest spacing: icon-to-label gaps, chip padding. */
+  --space-2: 8px; /** Compact spacing: form control padding, tight stacks. */
+  --space-3: 16px; /** Standard spacing: card padding, gaps between related elements. */
+  --space-4: 24px; /** Generous spacing: section gaps, page gutters, giving a spacious, unhurried consumer feel. */
+  --radius-sm: 4px; /** Subtle rounding for chips and small controls. */
+  --radius-md: 8px; /** Standard rounding for buttons and inputs, friendly but not playful. */
+  --radius-lg: 16px; /** Card and modal rounding, soft enough to feel warm and trustworthy. */
+  --font-family-base: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; /** Primary typeface for all UI text: a humanist sans for a clean, trustworthy read. */
+  --font-family-display: 'Fraunces', Georgia, serif; /** Headline typeface for hero/menu titles, adds warmth without sacrificing legibility. */
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-bold: 700;
+  --font-size-sm: 13px; /** Captions, helper text, chip labels. */
+  --font-size-md: 16px; /** Default body text and form controls. */
+  --font-size-lg: 22px; /** Section headings and menu item names. */
+  --shadow-card: 0px 2px 8px 0px rgb(10.6% 9.8% 8.6% / 0.08); /** Soft elevation for cards resting on the page background. */
+  --button-primary-background: var(--color-primary); /** Primary button fill, e.g. Add to Order, Place Order. */
+  --button-primary-background-hover: var(--color-primary-hover); /** Primary button fill on hover/press. */
+  --button-primary-foreground: var(--color-primary-fg); /** Primary button label/icon color. */
+  --button-secondary-background: var(--color-surface); /** Secondary button fill, e.g. Customize, Cancel. */
+  --button-secondary-border: var(--color-border); /** Secondary button border. */
+  --button-secondary-foreground: var(--color-fg); /** Secondary button label color. */
+  --button-radius: var(--radius-md); /** Corner radius shared by all button variants. */
+  --card-default-background: var(--color-surface); /** Card surface fill, e.g. menu item cards, order summary card. */
+  --card-default-border: var(--color-border); /** Card border color. */
+  --card-default-radius: var(--radius-lg); /** Card corner radius. */
+  --card-default-padding: var(--space-3); /** Card inner padding. */
+}
